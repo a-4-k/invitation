@@ -1,0 +1,611 @@
+/* NAVIGATION BAR */
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url("https://raw.githubusercontent.com/a-4-k/invitation/main/images/black.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+h1,h2,h3,h4,h5,p{
+  color:white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.dot{
+  width:4px;
+  height:4px;
+  position:absolute;
+  background-color:#ffd11a;
+  box-shadow:0px 0px 10px 2px #ffff1a;
+  border-radius: 20px;
+  z-index:2;
+}
+#p-container{
+  position:fixed;
+  z-index:-1;
+}
+
+
+
+
+/* ----------------------------------------NAVBAR---------------------------------------------------- */
+
+.sidenav {
+  height: 100%;
+  width:0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  line-height: 2.5;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration:none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  text-decoration: none;
+}
+.nav-icon{
+  color:white;
+}
+.navbar-brand{
+  margin-left:3%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+}
+@media screen and (max-width:600px) {
+  .sidenav {padding-top: 45px;}
+  .sidenav a {font-size: 18px;}
+}
+/* ------------------------------------------------------------------------ */
+.layout{
+  padding:0 4%;
+}
+.hr-solid{
+   margin:10% 5%;
+   border-top:2px solid #888846;
+}
+.section-heading{
+  font-size:3rem;
+  text-align:center;
+  padding-bottom:10%;
+  font-family: 'Great Vibes', cursive;
+  color: #e68a00;
+}
+
+/* ----------------------------------------------------------------------------- */
+#home{
+  margin-top:6rem;
+}
+.home-img{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-img{
+  display:inline-block;
+  width:80%;
+  max-width:400px;
+  height: auto;
+  border:25px solid #888846;
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+}
+.home-heading{
+  text-align:center;
+  padding:10%;
+  font-size:2.4rem;
+  color:  #888846;
+  margin: 0;
+  font-family: 'Great Vibes', cursive;
+
+}
+.home-text{
+  text-align: center;
+  padding:0 2% 0 ;
+  font-size:1.2rem;
+  margin:0;
+}
+/* ------------------------------------------------------------------------------ */
+/* .couple-card{
+  align-items: center;
+  text-align: center;
+  background-color:#FF3366;
+  color:#black;
+  margin:2%;
+  padding:3% 15%;
+  border-radius:4%;
+}
+.card-body{
+  position: relative;
+  background-color:  #fff;
+  border-radius:4%;
+  text-align:center;
+  display: block;
+  margin-bottom:1rem;
+}
+#bride-card-text,#groom-card-text{
+  color:black;
+}
+.card-title{
+  padding:2% 0;
+  color:black;
+  font-weight: 4x00;
+
+}
+p#bride-card-text,p#groom-card-text{
+margin:0;
+}
+.left-quote{
+  position:absolute;
+  top:8px;
+  left:4%;
+}
+.right-quote{
+  position:absolute;
+  bottom:8px;
+  right:4%;
+}
+img.card-img{
+  display:inline-block;
+  width:30%;
+  max-width:80px;
+  height: auto;
+  border:4px solid  #4d0039;
+  border-radius:50%;
+  margin-top:4%
+} */
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------Countdown---------------------------------- */
+.countdown{
+  margin-top:10%;
+}
+.countdown .section-heading{
+  padding-bottom:5%;
+}
+.timer{
+  text-align: center;
+  font-size:1.5rem;
+  color:#33cc99;
+  background-color:#05140f;
+  padding:4px;
+  display:inline-block;
+  width:30%;
+  max-width:60px;
+  height: auto;
+  border:4px solid #017951;
+  margin-top:4%
+}
+
+/* ---------------------------Our Story------------------------------------------- */
+.our-story{
+	background-color:transparent;
+  padding:0 5%;
+	width:100%;
+	min-height:100vh;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+.timeline{
+	width:800px;
+	background-color:#072736;
+	color:#fff;
+	padding:30px 20px;
+	box-shadow:0px 0px 10px rgba(0,0,0,.5);
+}
+.timeline ul{
+	list-style-type:none;
+	border-left:2px solid #094a68;
+	padding:10px 5px;
+}
+.timeline ul li{
+	padding:20px 20px;
+	position:relative;
+	cursor:pointer;
+	transition:.5s;
+}
+.timeline ul li span{
+	display:inline-block;
+	background-color:#1685b8;
+	border-radius:25px;
+	padding:2px 5px;
+	font-size:15px;
+	text-align:center;
+}
+.timeline ul li .content h3{
+	color:#34ace0;
+	font-size:17px;
+	padding-top:5px;
+}
+.timeline ul li .content p{
+	padding:5px 0px 15px 0px;
+	font-size:15px;
+}
+.timeline ul li:before{
+	position:absolute;
+	content:'';
+	width:10px;
+	height:10px;
+	background-color:#34ace0;
+	border-radius:50%;
+	left:-11px;
+	top:28px;
+	transition:.5s;
+}
+.timeline ul li:hover{
+	background-color:#071f2a;
+}
+.timeline ul li:hover:before{
+	background-color:#0F0;
+	box-shadow:0px 0px 10px 2px #0F0;
+}
+.story-font{
+  display:inline-block;
+  padding-top:5px;
+}
+@media (max-width:300px){
+	.timeline{
+		width:100%;
+		padding:30px 5px 30px 10px;
+	}
+	.timeline ul li .content h3{
+		color:#34ace0;
+		font-size:15px;
+	}
+
+}
+
+
+/* ----------------------------------Events---------------------------------------- */
+.event-card{
+  background-color:#e1ad01;
+  color:#fff;
+  margin:0 10% 10% 10%;
+  padding:1.5%;
+  text-align:center;
+}
+.event-content{
+  background-color:#404040;
+  margin:2%;
+  text-align: center;
+  padding:2%;
+}
+
+
+/* ---------------------Gallery----------------------------------------------------- */
+.tileLink {
+    vertical-align:middle;
+    text-align:left;
+    padding: 1em;
+    border: solid 1px #ddd;
+    font-size:1.3rem;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    display: block;
+    min-width: 220px;
+    margin-bottom: 1rem;
+    color:#ccf2ff;
+    background-color: #3c2a35;
+}
+.gallery-font-left {
+    vertical-align:middle;
+    position: relative;
+    float:left;
+}
+.gallery-font-right {
+    position: relative;
+    float:right
+}
+.tileLink .fa-2x{
+  padding-top:8px;
+  font-size:1.5rem;
+  margin-right:5px;
+}
+.tileLink:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color:black;
+    background-color: #b597a9;
+}
+/* ------------------------------invitation------------------------------------- */
+
+
+/* --------------------------------Location----------------------------------------- */
+.loc_collapsible {
+  background-color: #777;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size:1.3rem;
+  align-items: center;
+  margin-bottom: 5% ;
+  color:#ccf2ff;
+  background-color:#3d471f;
+  opacity:1;
+}
+
+
+.loc_active, .loc_collapsible:hover {
+  color: #e6f9ff;
+  background-color: #708238;
+}
+
+.loc_content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  margin-bottom: 5%;
+}
+.loc-font{
+  float:right;
+}
+input[type=text] {
+  background-color: white;
+  width:50%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+input[type=submit] {
+  background-color: #333333  ;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: left;
+}
+input[type=submit]:hover {
+  background-color: #1a1a1a;
+}
+.map-text{
+   padding:1% 0 2.5% 0;
+}
+.responsive-map{
+overflow: hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+.responsive-map iframe{
+left:0;
+top:0;
+height:80%;
+width:100%;
+position:absolute;
+}
+.map-label{
+ font-size:2rem;
+ text-align:left;
+}
+@media screen and (max-width:600px)
+{
+  .map-label{
+   font-size:1.5rem;
+   text-align:left;
+  }
+  input[type=submit] {
+    background-color: #333333  ;
+    color: white;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+  }
+  input[type=text] {
+    width:80%;
+  }
+  .para-justify{
+    text-align: justify;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add media query to make the icon bigger */
+
+/* ---------------------Home Gallery-------------------------------------------
+-------------------------------------------------------------------------- */
+
+
+.row {
+  margin: 15px;
+}
+/*----------------------------VENUE--------------------------------------------------*/
+
+/* ------------------------------------Headings------------------------------------------ */
+.text-heading{
+  font-size:5rem;
+  text-align: center;
+}
+.address,.landmark{
+  font-size:2.5rem;
+}
+.division-heading{
+  font-size:3.5rem;
+}
+/* -------------------------------------------------------------------------------------------- */
+
+
+/* --------------------------VENUE----------------------------------------------- */
+.venue{
+  background-color:#e6e6e6;
+}
+.venue-conatiner{
+  margin:0 2rem;
+  background-color:#fff;
+}
+.venue-heading,.venue-map,.venue-header,.venue-details{
+  padding:2.5%;
+}
+#more {display: none;}
+.read-btn{
+  border:0;
+  background-color: transparent;
+  color:red;
+  padding:0;
+}
+
+.get-directions,.get-map{
+  padding:0;
+  margin:auto;
+}
+
+
+
+
+/* ----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+---------------------------------------------------------------------------------- */
+.flip-card {
+  background-color: transparent;
+  width: 280px;
+  height:280px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin-bottom:10%;
+  border:25px solid #888846;
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+
+}
+.flip-card-front img{
+	width:100%;
+	height:100%;
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+  align-items: center;
+}
+.couple-card{
+  vertical-align: middle;
+  align-items: center;
+  text-align: center;
+  background-color:#FF3366;
+  color:#black;
+  padding: 5%
+}
+.card-body{
+  width:calc(100%-30px);
+  height:calc(100%-65px);
+  background-color:  #fff;
+  text-align:justify;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  position: absolute;
+  margin-left:15px;
+  margin-right:15px;
+  margin-top:50px;
+  margin-bottom:15px;
+  font-size:.3rem;
+}
+#bride-card-text,#groom-card-text{
+  color:black;
+}
+.card-title{
+  padding:2% 0;
+  color:black;
+  font-weight: 4;
+
+}
+p#bride-card-text,p#groom-card-text{
+  font-size:0.8rem;
+}
+.left-quote{
+  position:absolute;
+  top:70px;
+  left:35px;
+}
+.right-quote{
+  position:absolute;
+  bottom:50px;
+  right:35px;
+}
+img.card-img{
+  display:inline-block;
+  width:30%;
+  max-width:80px;
+  height: auto;
+  border:4px solid  #4d0039;
+  border-radius:50%;
+  margin-top:4%

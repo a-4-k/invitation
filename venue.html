@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <title>Invitation Link</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- BOOTSTRAP SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js" integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <div class="venue">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="tree.html">Family</a>
+      <a href="venue.html">Venue</a>
+      <a href="#">Photo Gallery</a>
+   </div>
+   <div class="navbar bg-dark navbar-dark" style="font-size:30px;cursor:pointer;margin-bottom:0;" onclick="openNav()">
+      <i class="fas fa-bars nav-icon fa-1x"></i>
+      <a class="navbar-brand mr-auto" href="#">OPEN</a>
+    </div>
+
+
+    <div class="venue-conatiner">
+
+      <!--**************************HEADER*********************************************** -->
+      <div class="venue-header">
+        <div class="venue-images">
+          <img class="mySlides" src="images/westin01.jpg" style="width:100%">
+          <img class="mySlides" src="images/westin02.jpg" style="width:100%">
+          <img class="mySlides" src="images/westin03.jpg" style="width:100%">
+        </div>
+      </div>
+
+      <!-- **************************HEADING********************************************** -->
+
+      <div class="venue-heading">
+        <h1 class="text-heading">The Westin Kolkata Rajarhat</h1>
+      </div>
+      <hr class="solid">
+      <!-- **************************DEATAILS******************************************* -->
+
+      <div class="venue-details">
+        <h2 class="division-heading">About the venue</h3>
+          <p class="para-justify">Enter the world of majestic and extravagant banqueting with The Westin, Rajarhat, Kolkata,
+            a luxurious 5-star property nestled in the heart of New Town, Kolkata.<span id="dots">...</span>
+            <span id="more">This gigantic hotel is home to enchanting banqueting spaces - The Westin
+              Grand Ballroom, Westin Gardens, Capri, and Coral. A perfect place to invite your guests and
+              host a lavish event.<br /><br />Westin Kolkata Banquet Hall is located in the vicinity of Mother's Wax Museum,
+              which is well-known among the locals. If your outstation guests are arriving at the venue via plane,
+              The Westin, Kolkata is 8.5 km far from the Netaji Subhash Chandra Bose International Airport, which takes
+              around 12 minutes to drive down to the destination, via NH12. The guests who are arriving at this place via
+              train, Howrah Junction which is around 19.9 km far from the venue, which is around 40 minutes' drive via NH12.
+              A luxurious suite is offered to guests arriving from a far distance, make your guests comfortable, and enjoy the event</span>
+          </p>
+          <button type="button" class="read-btn" id="myBtn" onclick="myFunction()">Read more</button>
+          <h3 class="address">Address
+        </h2>
+        <p>The Westin Kolkata, CBD/2, International Financial Hub(CBD), Newtown, Kolkata, West Bengal 700156</p>
+        <h3 class="landmark">Landmark</h2>
+          <p>The Ivy Mall</p>
+      </div>
+      <hr class="solid">
+      <!-- ***************************MAP************************************************* -->
+
+      <div class="venue-map">
+        <h2 class="division-heading">Location</h3>
+
+          <div class="row">
+            <div class="col-md-6 get-map">
+              <div class="responsive-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.6543432326516!2d88.4722048144599!3d22.592027785172842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027549287696d5%3A0xbdd849b4c2cf930b!2sThe%20Westin%20Kolkata%20Rajarhat!5e0!3m2!1sen!2sin!4v1601889447374!5m2!1sen!2sin"
+                  width="600" height="450" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0" style="border:2px solid black;">
+                </iframe>
+              </div>
+            </div>
+            <div class="col-md-6 get-directions">
+              <form action="http://maps.google.com/maps" method="get" target="_blank">
+                <label class="map-label" for="saddr">Enter your location</label><br />
+                <div class="map-text">
+                  <input type="text" name="saddr" placeholder="Search.." /><br />
+                  <input type="hidden" name="daddr" value="Westin Hotel Rajarhat" />
+                </div>
+                <input type="submit" value="Get directions" />
+              </form>
+            </div>
+          </div>
+      </div>
+
+      <!-- ****************************FOOTER***************************************************** -->
+
+      <div class="venue-footer">
+
+      </div>
+    </div>
+
+
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

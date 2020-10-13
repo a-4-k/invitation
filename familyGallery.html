@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="css/styles-family.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js"> </script>
+
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Raleway&display=swap" rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js" integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="preWedding.html">Pre-Wedding</a>
+      <a href="ringCeremony.html">Ring Ceremony</a>
+    </div>
+    <div class="navbar navbar-dark" style="font-size:30px;cursor:pointer;margin-bottom:0;background-color:#3d471f;" onclick="openNav()">
+      <i class="fas fa-bars nav-icon fa-1x"></i>
+      <a class="navbar-brand mr-auto" href="#">Wedding</a>
+    </div>
+  <div id="p-container"></div>
+
+    <div class="family-view">
+      <div class="card-container">
+       <div class="fcard" style="--image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/448976/berlin.jpg'); --angle: -5deg; --x: 5%; --y: 15%; --caption: 'Berlin in 2009'"></div>
+       <div class="fcard" style="--image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/448976/london.jpg'); --angle: -1deg; --x: -10%; --y: -20%; --caption: 'London, 2001'"></div>
+       <div class="fcard" style="--image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/448976/los-angeles.jpg'); --angle: -4deg; --x: -20%; --y: 5%; --caption: 'Los Angeles - 2004'"></div>
+       <div class="fcard" style="--image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/448976/italy.jpg'); --angle: 7deg; --x: 10%; --y: -7%; --caption: 'Venice, 1999'"></div>
+       <div class="fcard" style="--image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/448976/berlin.jpg'); --angle: -10deg; --x: 10%; --y: 15%; --caption: 'Berlin in 2009'"></div>
+       <div class="fcard" style="--image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/448976/london.jpg'); --angle: -7deg; --x: -5%; --y: -20%; --caption: 'London, 2001'"></div>
+      </div>
+    </div>
+
+
+    <script>
+    var total = 40,
+      container = document.getElementById('p-container'),
+      w = window.innerWidth,
+      h = window.innerHeight,
+      Tweens = [],
+      SPs = 1;
+
+
+
+    for (var i_p = total; i_p--;) {
+      var Div = document.createElement('div');
+      TweenLite.set(Div, {
+        attr: {
+          class: 'dot'
+        },
+        x: R(w),
+        y: R(h),
+        opacity: 0
+      });
+      container.appendChild(Div);
+      Anim(Div);
+      Tweens.push(Div);
+    };
+
+    function Anim(elm) {
+      elm.Tween = TweenLite.to(elm, R(20) + 10, {
+        bezier: {
+          values: [{
+            x: R(w),
+            y: R(h)
+          }, {
+            x: R(w),
+            y: R(h)
+          }]
+        },
+        opacity: R(1),
+        scale: R(1) + 0.5,
+        delay: R(2),
+        onComplete: Anim,
+        onCompleteParams: [elm]
+      })
+    };
+
+    for (var i_p = total; i_p--;) {
+      Tweens[i_p].Tween.play()
+    };
+    </script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
