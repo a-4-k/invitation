@@ -1,4 +1,4 @@
-/* NAVIGATION BAR */
+/* Elements */
 body {
   font-family: "Lato", sans-serif;
   background-image: url("https://raw.githubusercontent.com/a-4-k/invitation/main/images/black.jpg");
@@ -26,8 +26,21 @@ h1,h2,h3,h4,h5,p{
   position:fixed;
   z-index:-1;
 }
-
-
+/* ------------------------------Full screen toggle------------------------------------------------------------------ */
+*:fullscreen
+*:-ms-fullscreen,
+*:-webkit-full-screen,
+*:-moz-full-screen {
+   overflow: auto !important;
+}
+.btn-fs{
+  position: relative;
+  float: right;
+  width:100%;
+  height:25px;
+  border-radius:0;
+  border:0; 
+}
 
 
 /* ----------------------------------------NAVBAR---------------------------------------------------- */

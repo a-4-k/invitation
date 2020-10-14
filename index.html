@@ -38,10 +38,15 @@
     <a href="#invitation">Invitation</a>
     <a href="#location">Location</a>
   </div>
-  <div class="navbar navbar-dark" style="font-size:30px;cursor:pointer;margin-bottom:0;background-color:#3d471f;" onclick="openNav()">
-    <i class="fas fa-bars nav-icon fa-1x"></i>
-    <a class="navbar-brand mr-auto" href="#">Wedding</a>
-  </div>
+        <div class="navbar navbar-dark" style="font-size:30px;cursor:pointer;margin-bottom:0;background-color:#3d471f;" onclick="openNav()">
+          <i class="fas fa-bars nav-icon fa-1x"></i>
+          <a class="navbar-brand mr-auto" href="#">Wedding</a>
+        </div>
+
+        <input class="btn-fs" type="button" value="" onclick="toggleFullScreen(document.body)" />
+  
+
+
 
 
 
@@ -92,21 +97,21 @@
             <i class="fas fa-quote-right fa-1x right-quote"></i>
           </div>
       </div> -->
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="images\couple-bride.png" alt="Avatar">
-          </div>
-          <div class="flip-card-back couple-card">
-            <h4 class="card-title">Bride</h4>
-            <div class="card-body">
-              <p id="groom-card-text">
-            A Beautiful woman with a fine prospect of happiness behind her. There is something magical about becoming the bride. Commitment of spending the eternity with the man.
-              </p>
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="images\couple-bride.png" alt="Avatar">
+            </div>
+            <div class="flip-card-back couple-card">
+              <h4 class="card-title">Bride</h4>
+              <div class="card-body">
+                <p id="groom-card-text">
+                  A Beautiful woman with a fine prospect of happiness behind her. There is something magical about becoming the bride. Commitment of spending the eternity with the man.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
         <div class="flip-card">
           <div class="flip-card-inner">
             <div class="flip-card-front">
@@ -116,8 +121,8 @@
               <h4 class="card-title">Groom</h4>
               <div class="card-body">
                 <p id="groom-card-text">
-                A Charismatic young man who always smiles proudly because he is convinced that he has accomplished something quite wonderful by persuading the woman of his dreams to marry him.
-              </p>
+                  A Charismatic young man who always smiles proudly because he is convinced that he has accomplished something quite wonderful by persuading the woman of his dreams to marry him.
+                </p>
               </div>
             </div>
           </div>
@@ -458,9 +463,6 @@
       h = window.innerHeight,
       Tweens = [],
       SPs = 1;
-
-
-
     for (var i_p = total; i_p--;) {
       var Div = document.createElement('div');
       TweenLite.set(Div, {
@@ -494,10 +496,36 @@
         onCompleteParams: [elm]
       })
     };
-
     for (var i_p = total; i_p--;) {
       Tweens[i_p].Tween.play()
     };
+
+
+    // ***************************full Screen Toggle***********************************************
+    function toggleFullScreen(elem) {
+      if ((document.fullScreenElement !== undefined && document.fullScreenElement === null) || (document.msFullscreenElement !== undefined && document.msFullscreenElement === null) || (document.mozFullScreen !== undefined && !document
+        .mozFullScreen) || (document.webkitIsFullScreen !== undefined && !document.webkitIsFullScreen)) {
+        if (elem.requestFullScreen) {
+          elem.requestFullScreen();
+        } else if (elem.mozRequestFullScreen) {
+          elem.mozRequestFullScreen();
+        } else if (elem.webkitRequestFullScreen) {
+          elem.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+        } else if (elem.msRequestFullscreen) {
+          elem.msRequestFullscreen();
+        }
+      } else {
+        if (document.cancelFullScreen) {
+          document.cancelFullScreen();
+        } else if (document.mozCancelFullScreen) {
+          document.mozCancelFullScreen();
+        } else if (document.webkitCancelFullScreen) {
+          document.webkitCancelFullScreen();
+        } else if (document.msExitFullscreen) {
+          document.msExitFullscreen();
+        }
+      }
+    }
   </script>
 </body>
 
