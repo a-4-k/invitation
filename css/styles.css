@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5,p{
 *:-ms-fullscreen,
 *:-webkit-full-screen,
 *:-moz-full-screen {
-   overflow: scroll !important;
+   overflow: scroll;
 }
 .btn-fs{
   position: relative;
