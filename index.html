@@ -38,13 +38,16 @@
     <a href="#invitation">Invitation</a>
     <a href="#location">Location</a>
   </div>
-        <div class="navbar navbar-dark" style="font-size:30px;cursor:pointer;margin-bottom:0;background-color:#3d471f;" onclick="openNav()">
-          <i class="fas fa-bars nav-icon fa-1x"></i>
-          <a class="navbar-brand mr-auto" href="#">Wedding</a>
+        <div class="navbar navbar-dark fixed-top" style="font-size:30px;cursor:pointer;margin-bottom:0;background-color:#3d471f;" >
+          <i class="fas fa-bars nav-icon fa-1x" onclick="openNav()"></i>
+          <a class="navbar-brand mr-auto" href="#" onclick="openNav()" >Wedding</a>
+          <i class="fas fa-expand fa-1x expand-icon active-icon" onclick="toggleFullScreen(documentElement)"></i>
+          <i class="fas fa-compress fa-1x compress-icon " onclick="toggleFullScreen(documentElement)"></i>
         </div>
 
-        <input class="btn-fs" type="button" value="" onclick="toggleFullScreen(document.body)" />
-  
+        <!-- <input class="btn-fs" type="button" value="" onclick="toggleFullScreen(document.body)" /> -->
+
+
 
 
 
@@ -413,6 +416,9 @@
       brideTypeWriter();
       groomTypeWriter();
     }
+
+// ***************************COUNTDOW*******************************************
+
     window.onload = InitMove;
     var countDownDate = new Date("Dec 1, 2020 15:30:00").getTime();
     // Update the count down every 1 second
@@ -505,6 +511,8 @@
     function toggleFullScreen(elem) {
       if ((document.fullScreenElement !== undefined && document.fullScreenElement === null) || (document.msFullscreenElement !== undefined && document.msFullscreenElement === null) || (document.mozFullScreen !== undefined && !document
         .mozFullScreen) || (document.webkitIsFullScreen !== undefined && !document.webkitIsFullScreen)) {
+        document.querySelector('.expand-icon').classList.remove('active-icon');
+        document.querySelector('.compress-icon').classList.add('active-icon');
         if (elem.requestFullScreen) {
           elem.requestFullScreen();
         } else if (elem.mozRequestFullScreen) {
@@ -515,6 +523,8 @@
           elem.msRequestFullscreen();
         }
       } else {
+        document.querySelector('.expand-icon').classList.add('active-icon');
+        document.querySelector('.compress-icon').classList.remove('active-icon');
         if (document.cancelFullScreen) {
           document.cancelFullScreen();
         } else if (document.mozCancelFullScreen) {

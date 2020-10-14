@@ -1,4 +1,4 @@
-/* Elements */
+/* -------------------------Elements------------------------------------------------ */
 body {
   font-family: "Lato", sans-serif;
   background-image: url("https://raw.githubusercontent.com/a-4-k/invitation/main/images/black.jpg");
@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5,p{
 *:-ms-fullscreen,
 *:-webkit-full-screen,
 *:-moz-full-screen {
-   overflow: scroll;
+   overflow: auto !important;
 }
 .btn-fs{
   position: relative;
@@ -39,7 +39,7 @@ h1,h2,h3,h4,h5,p{
   width:100%;
   height:25px;
   border-radius:0;
-  border:0; 
+  border:0;
 }
 
 
@@ -93,6 +93,15 @@ h1,h2,h3,h4,h5,p{
   .sidenav {padding-top: 45px;}
   .sidenav a {font-size: 18px;}
 }
+.expand-icon,.compress-icon{
+        color:white;
+        position:relative;
+        float:right;
+        display:none;
+}
+.active-icon{
+  display:block;
+}
 /* ------------------------------------------------------------------------ */
 .layout{
   padding:0 4%;
@@ -109,7 +118,7 @@ h1,h2,h3,h4,h5,p{
   color: #e68a00;
 }
 
-/* ----------------------------------------------------------------------------- */
+/* ---------------------------------Home-------------------------------------------- */
 #home{
   margin-top:6rem;
 }
@@ -319,7 +328,7 @@ img.card-img{
 }
 
 
-/* ---------------------Gallery----------------------------------------------------- */
+/* ------------------------------Gallery---------------------------------------- */
 .tileLink {
     vertical-align:middle;
     text-align:left;
@@ -473,20 +482,6 @@ position:absolute;
 .row {
   margin: 15px;
 }
-/*----------------------------VENUE--------------------------------------------------*/
-
-/* ------------------------------------Headings------------------------------------------ */
-.text-heading{
-  font-size:5rem;
-  text-align: center;
-}
-.address,.landmark{
-  font-size:2.5rem;
-}
-.division-heading{
-  font-size:3.5rem;
-}
-/* -------------------------------------------------------------------------------------------- */
 
 
 /* --------------------------VENUE----------------------------------------------- */
@@ -516,10 +511,7 @@ position:absolute;
 
 
 
-/* ----------------------------------------------------------------------------------
-----------------------------------------------------------------------------------
-----------------------------------------------------------------------------------
----------------------------------------------------------------------------------- */
+/* --------------------------------Couple----------------------------------------- */
 .flip-card {
   background-color: transparent;
   width: 280px;
