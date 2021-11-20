@@ -107,6 +107,31 @@ h1,h2,h3,h4,h5,p{
 .active-icon{
   display:block;
 }
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(244,157,22, 0.4);
+  }
+  70% {
+      -webkit-box-shadow: 0 0 0 10px rgba(244,157,22, 0);
+  }
+  100% {
+      -webkit-box-shadow: 0 0 0 0 rgba(244,157,22, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(244,157,22, 0.4);
+    box-shadow: 0 0 0 0 rgba(244,157,22, 0.4);
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 10px rgba(244,157,22, 0);
+      box-shadow: 0 0 0 10px rgba(244,157,22, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(244,157,22, 0);
+      box-shadow: 0 0 0 0 rgba(244,157,22, 0);
+  }
+}
 /* ------------------------------------------------------------------------ */
 .layout{
   padding:0 4%;
