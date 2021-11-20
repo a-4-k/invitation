@@ -95,17 +95,20 @@ h1,h2,h3,h4,h5,p{
   .sidenav {padding-top: 45px;}
   .sidenav a {font-size: 18px;}
 }
-.expand-icon,.compress-icon{
+.expand-icon{
         color:white;
         position:relative;
         float:right;
         display:none;
-	
-}
-.animate-expand{
 	cursor: pointer;
 	box-shadow: 0 0 0 rgb(244,157,22);
-	animation: pulse 2s infinite;
+	animation: pulse 2s infinite;	
+}
+.compress-icon{
+        color:white;
+        position:relative;
+        float:right;
+        display:none;
 }
 .active-icon{
   display:block;
