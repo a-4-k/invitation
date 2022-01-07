@@ -301,13 +301,13 @@ img.card-img{
 	background-color:#1685b8;
 	border-radius:25px;
 	padding:2px 5px;
-	font-size:15px;
+	font-size:25px;
 	text-align:center;
 }
 .timeline ul li .content h3{
 	color:#34ace0;
-	font-size:17px;
-	padding-top:5px;
+	font-size:20px;
+	padding-top:10px;
 }
 .timeline ul li .content p{
 	padding:5px 0px 15px 0px;
